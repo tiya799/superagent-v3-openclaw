@@ -1,0 +1,220 @@
+<svg viewBox="0 0 1200 1400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="1400" fill="#f5f5f5"/>
+  
+  <!-- Main container -->
+  <rect x="30" y="30" width="1140" height="1340" fill="white" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+  
+  <!-- Header -->
+  <text x="50" y="80" font-size="32" font-weight="bold" fill="#333333" font-family="Arial, sans-serif">Mimo AI Platform</text>
+  <text x="50" y="110" font-size="16" fill="#999999" font-family="Arial, sans-serif">Billing Dashboard</text>
+  
+  <text x="900" y="80" font-size="12" fill="#666666" font-family="Arial, sans-serif">Account: gon@crypto.dev</text>
+  <text x="900" y="100" font-size="11" fill="#999999" font-family="Arial, sans-serif">Period: 2026-04-25 to 2026-05-25</text>
+  
+  <!-- Separator line -->
+  <line x1="50" y1="120" x2="1150" y2="120" stroke="#e0e0e0" stroke-width="2"/>
+  
+  <!-- Summary Cards -->
+  <!-- Card 1: Total Tokens -->
+  <rect x="50" y="150" width="250" height="100" fill="#667eea" rx="8"/>
+  <text x="65" y="175" font-size="12" fill="white" font-family="Arial, sans-serif" font-weight="bold">Total Tokens Used</text>
+  <text x="65" y="225" font-size="28" fill="white" font-family="Arial, sans-serif" font-weight="bold">25.5M</text>
+  
+  <!-- Card 2: Total Cost -->
+  <rect x="320" y="150" width="250" height="100" fill="#f5576c" rx="8"/>
+  <text x="335" y="175" font-size="12" fill="white" font-family="Arial, sans-serif" font-weight="bold">Total Cost</text>
+  <text x="335" y="225" font-size="28" fill="white" font-family="Arial, sans-serif" font-weight="bold">$382.50</text>
+  
+  <!-- Card 3: Daily Average -->
+  <rect x="590" y="150" width="250" height="100" fill="#00f2fe" rx="8"/>
+  <text x="605" y="175" font-size="12" fill="white" font-family="Arial, sans-serif" font-weight="bold">Daily Average</text>
+  <text x="605" y="225" font-size="28" fill="white" font-family="Arial, sans-serif" font-weight="bold">$12.75</text>
+  
+  <!-- Card 4: Operations -->
+  <rect x="860" y="150" width="250" height="100" fill="#43e97b" rx="8"/>
+  <text x="875" y="175" font-size="12" fill="white" font-family="Arial, sans-serif" font-weight="bold">Operations</text>
+  <text x="875" y="225" font-size="28" fill="white" font-family="Arial, sans-serif" font-weight="bold">744</text>
+  
+  <!-- Chart Section -->
+  <text x="50" y="310" font-size="16" font-weight="bold" fill="#333333" font-family="Arial, sans-serif">Daily Token Usage (30 days)</text>
+  
+  <!-- Chart background -->
+  <rect x="50" y="330" width="1100" height="180" fill="#f9f9f9" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+  
+  <!-- Bar chart -->
+  <g id="bars">
+    <!-- Day 1 -->
+    <rect x="60" y="460" width="28" height="45" fill="#667eea"/>
+    <!-- Day 2 -->
+    <rect x="92" y="450" width="28" height="55" fill="#667eea"/>
+    <!-- Day 3 -->
+    <rect x="124" y="440" width="28" height="65" fill="#667eea"/>
+    <!-- Day 4 -->
+    <rect x="156" y="430" width="28" height="75" fill="#667eea"/>
+    <!-- Day 5 -->
+    <rect x="188" y="420" width="28" height="85" fill="#667eea"/>
+    <!-- Day 6 -->
+    <rect x="220" y="410" width="28" height="95" fill="#667eea"/>
+    <!-- Day 7 -->
+    <rect x="252" y="400" width="28" height="105" fill="#667eea"/>
+    <!-- Day 8 -->
+    <rect x="284" y="460" width="28" height="45" fill="#667eea"/>
+    <!-- Day 9 -->
+    <rect x="316" y="450" width="28" height="55" fill="#667eea"/>
+    <!-- Day 10 -->
+    <rect x="348" y="440" width="28" height="65" fill="#667eea"/>
+    <!-- Day 11 -->
+    <rect x="380" y="430" width="28" height="75" fill="#667eea"/>
+    <!-- Day 12 -->
+    <rect x="412" y="420" width="28" height="85" fill="#667eea"/>
+    <!-- Day 13 -->
+    <rect x="444" y="410" width="28" height="95" fill="#667eea"/>
+    <!-- Day 14 -->
+    <rect x="476" y="400" width="28" height="105" fill="#667eea"/>
+    <!-- Day 15 -->
+    <rect x="508" y="460" width="28" height="45" fill="#667eea"/>
+    <!-- Day 16 -->
+    <rect x="540" y="450" width="28" height="55" fill="#667eea"/>
+    <!-- Day 17 -->
+    <rect x="572" y="440" width="28" height="65" fill="#667eea"/>
+    <!-- Day 18 -->
+    <rect x="604" y="430" width="28" height="75" fill="#667eea"/>
+    <!-- Day 19 -->
+    <rect x="636" y="420" width="28" height="85" fill="#667eea"/>
+    <!-- Day 20 -->
+    <rect x="668" y="410" width="28" height="95" fill="#667eea"/>
+    <!-- Day 21 -->
+    <rect x="700" y="400" width="28" height="105" fill="#667eea"/>
+    <!-- Day 22 -->
+    <rect x="732" y="460" width="28" height="45" fill="#667eea"/>
+    <!-- Day 23 -->
+    <rect x="764" y="450" width="28" height="55" fill="#667eea"/>
+    <!-- Day 24 -->
+    <rect x="796" y="440" width="28" height="65" fill="#667eea"/>
+    <!-- Day 25 -->
+    <rect x="828" y="430" width="28" height="75" fill="#667eea"/>
+    <!-- Day 26 -->
+    <rect x="860" y="420" width="28" height="85" fill="#667eea"/>
+    <!-- Day 27 -->
+    <rect x="892" y="410" width="28" height="95" fill="#667eea"/>
+    <!-- Day 28 -->
+    <rect x="924" y="400" width="28" height="105" fill="#667eea"/>
+    <!-- Day 29 -->
+    <rect x="956" y="460" width="28" height="45" fill="#667eea"/>
+    <!-- Day 30 -->
+    <rect x="988" y="450" width="28" height="55" fill="#667eea"/>
+  </g>
+  
+  <!-- Y-axis labels -->
+  <text x="30" y="510" font-size="10" fill="#999999" font-family="Arial, sans-serif" text-anchor="end">0</text>
+  <text x="30" y="410" font-size="10" fill="#999999" font-family="Arial, sans-serif" text-anchor="end">1M</text>
+  
+  <!-- Table Section -->
+  <text x="50" y="580" font-size="16" font-weight="bold" fill="#333333" font-family="Arial, sans-serif">Daily Breakdown (Last 10 Days)</text>
+  
+  <!-- Table header -->
+  <rect x="50" y="600" width="1100" height="30" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="70" y="620" font-size="12" font-weight="bold" fill="#333333" font-family="Arial, sans-serif">Date</text>
+  <text x="220" y="620" font-size="12" font-weight="bold" fill="#333333" font-family="Arial, sans-serif">Tokens Used</text>
+  <text x="470" y="620" font-size="12" font-weight="bold" fill="#333333" font-family="Arial, sans-serif">Cost (USD)</text>
+  <text x="670" y="620" font-size="12" font-weight="bold" fill="#333333" font-family="Arial, sans-serif">Operations</text>
+  <text x="900" y="620" font-size="12" font-weight="bold" fill="#333333" font-family="Arial, sans-serif">Status</text>
+  
+  <!-- Table rows -->
+  <!-- Row 1 -->
+  <rect x="50" y="630" width="1100" height="25" fill="white" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="70" y="648" font-size="11" fill="#666666" font-family="Arial, sans-serif">2026-05-16</text>
+  <text x="220" y="648" font-size="11" fill="#666666" font-family="Arial, sans-serif">850,000</text>
+  <text x="470" y="648" font-size="11" fill="#333333" font-family="Arial, sans-serif" font-weight="bold">$12.75</text>
+  <text x="670" y="648" font-size="11" fill="#666666" font-family="Arial, sans-serif">26</text>
+  <rect x="900" y="635" width="80" height="18" fill="#e8f5e9" rx="3"/>
+  <text x="910" y="647" font-size="10" fill="#2e7d32" font-family="Arial, sans-serif" font-weight="bold">Completed</text>
+  
+  <!-- Row 2 -->
+  <rect x="50" y="655" width="1100" height="25" fill="#f9f9f9" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="70" y="673" font-size="11" fill="#666666" font-family="Arial, sans-serif">2026-05-17</text>
+  <text x="220" y="673" font-size="11" fill="#666666" font-family="Arial, sans-serif">900,000</text>
+  <text x="470" y="673" font-size="11" fill="#333333" font-family="Arial, sans-serif" font-weight="bold">$13.50</text>
+  <text x="670" y="673" font-size="11" fill="#666666" font-family="Arial, sans-serif">27</text>
+  <rect x="900" y="660" width="80" height="18" fill="#e8f5e9" rx="3"/>
+  <text x="910" y="672" font-size="10" fill="#2e7d32" font-family="Arial, sans-serif" font-weight="bold">Completed</text>
+  
+  <!-- Row 3 -->
+  <rect x="50" y="680" width="1100" height="25" fill="white" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="70" y="698" font-size="11" fill="#666666" font-family="Arial, sans-serif">2026-05-18</text>
+  <text x="220" y="698" font-size="11" fill="#666666" font-family="Arial, sans-serif">950,000</text>
+  <text x="470" y="698" font-size="11" fill="#333333" font-family="Arial, sans-serif" font-weight="bold">$14.25</text>
+  <text x="670" y="698" font-size="11" fill="#666666" font-family="Arial, sans-serif">28</text>
+  <rect x="900" y="685" width="80" height="18" fill="#e8f5e9" rx="3"/>
+  <text x="910" y="697" font-size="10" fill="#2e7d32" font-family="Arial, sans-serif" font-weight="bold">Completed</text>
+  
+  <!-- Row 4 -->
+  <rect x="50" y="705" width="1100" height="25" fill="#f9f9f9" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="70" y="723" font-size="11" fill="#666666" font-family="Arial, sans-serif">2026-05-19</text>
+  <text x="220" y="723" font-size="11" fill="#666666" font-family="Arial, sans-serif">1,000,000</text>
+  <text x="470" y="723" font-size="11" fill="#333333" font-family="Arial, sans-serif" font-weight="bold">$15.00</text>
+  <text x="670" y="723" font-size="11" fill="#666666" font-family="Arial, sans-serif">29</text>
+  <rect x="900" y="710" width="80" height="18" fill="#e8f5e9" rx="3"/>
+  <text x="910" y="722" font-size="10" fill="#2e7d32" font-family="Arial, sans-serif" font-weight="bold">Completed</text>
+  
+  <!-- Row 5 -->
+  <rect x="50" y="730" width="1100" height="25" fill="white" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="70" y="748" font-size="11" fill="#666666" font-family="Arial, sans-serif">2026-05-20</text>
+  <text x="220" y="748" font-size="11" fill="#666666" font-family="Arial, sans-serif">1,050,000</text>
+  <text x="470" y="748" font-size="11" fill="#333333" font-family="Arial, sans-serif" font-weight="bold">$15.75</text>
+  <text x="670" y="748" font-size="11" fill="#666666" font-family="Arial, sans-serif">30</text>
+  <rect x="900" y="735" width="80" height="18" fill="#e8f5e9" rx="3"/>
+  <text x="910" y="747" font-size="10" fill="#2e7d32" font-family="Arial, sans-serif" font-weight="bold">Completed</text>
+  
+  <!-- Row 6 -->
+  <rect x="50" y="755" width="1100" height="25" fill="#f9f9f9" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="70" y="773" font-size="11" fill="#666666" font-family="Arial, sans-serif">2026-05-21</text>
+  <text x="220" y="773" font-size="11" fill="#666666" font-family="Arial, sans-serif">1,100,000</text>
+  <text x="470" y="773" font-size="11" fill="#333333" font-family="Arial, sans-serif" font-weight="bold">$16.50</text>
+  <text x="670" y="773" font-size="11" fill="#666666" font-family="Arial, sans-serif">31</text>
+  <rect x="900" y="760" width="80" height="18" fill="#e8f5e9" rx="3"/>
+  <text x="910" y="772" font-size="10" fill="#2e7d32" font-family="Arial, sans-serif" font-weight="bold">Completed</text>
+  
+  <!-- Row 7 -->
+  <rect x="50" y="780" width="1100" height="25" fill="white" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="70" y="798" font-size="11" fill="#666666" font-family="Arial, sans-serif">2026-05-22</text>
+  <text x="220" y="798" font-size="11" fill="#666666" font-family="Arial, sans-serif">1,150,000</text>
+  <text x="470" y="798" font-size="11" fill="#333333" font-family="Arial, sans-serif" font-weight="bold">$17.25</text>
+  <text x="670" y="798" font-size="11" fill="#666666" font-family="Arial, sans-serif">32</text>
+  <rect x="900" y="785" width="80" height="18" fill="#e8f5e9" rx="3"/>
+  <text x="910" y="797" font-size="10" fill="#2e7d32" font-family="Arial, sans-serif" font-weight="bold">Completed</text>
+  
+  <!-- Row 8 -->
+  <rect x="50" y="805" width="1100" height="25" fill="#f9f9f9" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="70" y="823" font-size="11" fill="#666666" font-family="Arial, sans-serif">2026-05-23</text>
+  <text x="220" y="823" font-size="11" fill="#666666" font-family="Arial, sans-serif">850,000</text>
+  <text x="470" y="823" font-size="11" fill="#333333" font-family="Arial, sans-serif" font-weight="bold">$12.75</text>
+  <text x="670" y="823" font-size="11" fill="#666666" font-family="Arial, sans-serif">33</text>
+  <rect x="900" y="810" width="80" height="18" fill="#e8f5e9" rx="3"/>
+  <text x="910" y="822" font-size="10" fill="#2e7d32" font-family="Arial, sans-serif" font-weight="bold">Completed</text>
+  
+  <!-- Row 9 -->
+  <rect x="50" y="830" width="1100" height="25" fill="white" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="70" y="848" font-size="11" fill="#666666" font-family="Arial, sans-serif">2026-05-24</text>
+  <text x="220" y="848" font-size="11" fill="#666666" font-family="Arial, sans-serif">900,000</text>
+  <text x="470" y="848" font-size="11" fill="#333333" font-family="Arial, sans-serif" font-weight="bold">$13.50</text>
+  <text x="670" y="848" font-size="11" fill="#666666" font-family="Arial, sans-serif">34</text>
+  <rect x="900" y="835" width="80" height="18" fill="#e8f5e9" rx="3"/>
+  <text x="910" y="847" font-size="10" fill="#2e7d32" font-family="Arial, sans-serif" font-weight="bold">Completed</text>
+  
+  <!-- Row 10 -->
+  <rect x="50" y="855" width="1100" height="25" fill="#f9f9f9" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="70" y="873" font-size="11" fill="#666666" font-family="Arial, sans-serif">2026-05-25</text>
+  <text x="220" y="873" font-size="11" fill="#666666" font-family="Arial, sans-serif">950,000</text>
+  <text x="470" y="873" font-size="11" fill="#333333" font-family="Arial, sans-serif" font-weight="bold">$14.25</text>
+  <text x="670" y="873" font-size="11" fill="#666666" font-family="Arial, sans-serif">25</text>
+  <rect x="900" y="860" width="80" height="18" fill="#fff3cd" rx="3"/>
+  <text x="910" y="872" font-size="10" fill="#856404" font-family="Arial, sans-serif" font-weight="bold">In Progress</text>
+  
+  <!-- Footer separator -->
+  <line x1="50" y1="920" x2="1150" y2="920" stroke="#e0e0e0" stroke-width="1"/>
+  
+  <!-- Footer -->
+  <text x="50" y="950" font-size="11" fill="#999999" font-family="Arial, sans-serif">Mimo AI Platform © 2026 | Account verified and active | Last updated: 2026-05-25 16:01 UTC</text>
+</svg>
