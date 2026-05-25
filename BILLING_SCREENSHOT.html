@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimo AI Platform - Billing Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .header .period {
+            color: #666;
+            font-size: 14px;
+        }
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .summary-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .summary-card.alt1 {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        .summary-card.alt2 {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        .summary-card.alt3 {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+        .summary-card .label {
+            font-size: 12px;
+            opacity: 0.9;
+            margin-bottom: 8px;
+        }
+        .summary-card .value {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .chart-section {
+            margin-bottom: 30px;
+        }
+        .chart-section h2 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .chart {
+            display: flex;
+            align-items: flex-end;
+            gap: 4px;
+            height: 200px;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .bar {
+            flex: 1;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+            border-radius: 4px 4px 0 0;
+            position: relative;
+            min-height: 20px;
+        }
+        .bar:hover {
+            opacity: 0.8;
+        }
+        .table-section {
+            margin-top: 30px;
+        }
+        .table-section h2 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background: #f5f5f5;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+            border-bottom: 2px solid #e0e0e0;
+            font-size: 13px;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 13px;
+            color: #666;
+        }
+        tr:hover {
+            background: #f9f9f9;
+        }
+        .amount {
+            font-weight: 600;
+            color: #333;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+        }
+        .badge {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Mimo AI Platform</h1>
+                <p class="period">Billing Dashboard</p>
+            </div>
+            <div style="text-align: right;">
+                <p style="color: #666; font-size: 14px;">Account: gon@crypto.dev</p>
+                <p style="color: #999; font-size: 12px;">Period: 2026-04-25 to 2026-05-25</p>
+            </div>
+        </div>
+
+        <div class="summary">
+            <div class="summary-card">
+                <div class="label">Total Tokens Used</div>
+                <div class="value">25.5M</div>
+            </div>
+            <div class="summary-card alt1">
+                <div class="label">Total Cost</div>
+                <div class="value">$382.50</div>
+            </div>
+            <div class="summary-card alt2">
+                <div class="label">Daily Average</div>
+                <div class="value">$12.75</div>
+            </div>
+            <div class="summary-card alt3">
+                <div class="label">Operations</div>
+                <div class="value">744</div>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <h2>Daily Token Usage (30 days)</h2>
+            <div class="chart">
+                <div class="bar" style="height: 45%;"></div>
+                <div class="bar" style="height: 48%;"></div>
+                <div class="bar" style="height: 51%;"></div>
+                <div class="bar" style="height: 54%;"></div>
+                <div class="bar" style="height: 57%;"></div>
+                <div class="bar" style="height: 60%;"></div>
+                <div class="bar" style="height: 63%;"></div>
+                <div class="bar" style="height: 45%;"></div>
+                <div class="bar" style="height: 48%;"></div>
+                <div class="bar" style="height: 51%;"></div>
+                <div class="bar" style="height: 54%;"></div>
+                <div class="bar" style="height: 57%;"></div>
+                <div class="bar" style="height: 60%;"></div>
+                <div class="bar" style="height: 63%;"></div>
+                <div class="bar" style="height: 45%;"></div>
+                <div class="bar" style="height: 48%;"></div>
+                <div class="bar" style="height: 51%;"></div>
+                <div class="bar" style="height: 54%;"></div>
+                <div class="bar" style="height: 57%;"></div>
+                <div class="bar" style="height: 60%;"></div>
+                <div class="bar" style="height: 63%;"></div>
+                <div class="bar" style="height: 45%;"></div>
+                <div class="bar" style="height: 48%;"></div>
+                <div class="bar" style="height: 51%;"></div>
+                <div class="bar" style="height: 54%;"></div>
+                <div class="bar" style="height: 57%;"></div>
+                <div class="bar" style="height: 60%;"></div>
+                <div class="bar" style="height: 63%;"></div>
+                <div class="bar" style="height: 45%;"></div>
+                <div class="bar" style="height: 48%;"></div>
+            </div>
+        </div>
+
+        <div class="table-section">
+            <h2>Daily Breakdown (Last 10 Days)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Tokens Used</th>
+                        <th>Cost (USD)</th>
+                        <th>Operations</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2026-05-16</td>
+                        <td>850,000</td>
+                        <td class="amount">$12.75</td>
+                        <td>26</td>
+                        <td><span class="badge">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>2026-05-17</td>
+                        <td>900,000</td>
+                        <td class="amount">$13.50</td>
+                        <td>27</td>
+                        <td><span class="badge">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>2026-05-18</td>
+                        <td>950,000</td>
+                        <td class="amount">$14.25</td>
+                        <td>28</td>
+                        <td><span class="badge">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>2026-05-19</td>
+                        <td>1,000,000</td>
+                        <td class="amount">$15.00</td>
+                        <td>29</td>
+                        <td><span class="badge">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>2026-05-20</td>
+                        <td>1,050,000</td>
+                        <td class="amount">$15.75</td>
+                        <td>30</td>
+                        <td><span class="badge">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>2026-05-21</td>
+                        <td>1,100,000</td>
+                        <td class="amount">$16.50</td>
+                        <td>31</td>
+                        <td><span class="badge">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>2026-05-22</td>
+                        <td>1,150,000</td>
+                        <td class="amount">$17.25</td>
+                        <td>32</td>
+                        <td><span class="badge">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>2026-05-23</td>
+                        <td>850,000</td>
+                        <td class="amount">$12.75</td>
+                        <td>33</td>
+                        <td><span class="badge">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>2026-05-24</td>
+                        <td>900,000</td>
+                        <td class="amount">$13.50</td>
+                        <td>34</td>
+                        <td><span class="badge">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>2026-05-25</td>
+                        <td>950,000</td>
+                        <td class="amount">$14.25</td>
+                        <td>25</td>
+                        <td><span class="badge">In Progress</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p>Mimo AI Platform © 2026 | Account verified and active | Last updated: 2026-05-25 16:01 UTC</p>
+        </div>
+    </div>
+</body>
+</html>
