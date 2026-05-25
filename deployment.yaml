@@ -1,0 +1,31 @@
+apiVersion: akash.network/v1beta3
+kind: Deployment
+metadata:
+  name: superagent-v3-openclaw
+spec:
+  replicas: 1
+  services:
+    - name: agent
+      image: node:20-alpine
+      expose:
+        - port: 3000
+          as: 3000
+          to:
+            - global: true
+      env:
+        - AGENT_NAME=superagent-v3
+        - NETWORK=base-testnet
+        - WALLET_ADDRESS=0x0eff602f7f35bef67578a47c8670e24be2e87ca3
+        - RPC_BASE=https://base-testnet-rpc.publicnode.com
+        - RPC_ARBITRUM=https://arbitrum-testnet-rpc.publicnode.com
+      resources:
+        cpu:
+          units: 2
+        memory:
+          size: 4Gi
+        storage:
+          - size: 10Gi
+pricing:
+  agent:
+    denom: uakt
+    amount: 50000
